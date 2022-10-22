@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+
+@font-face {
+  font-family: "notoSans";
+  src: url("../assets/fonts/NotoSansJP-Light.otf");
+}
+
+.ttl {
+  @apply text-[40px] md:text-[55px] font-lato font-thin tracking-wider text-center mb-14 md:mb-20;
+}
+
+.tab {
+  @apply w-4/12 text-sm md:text-base tracking-widest text-center font-lato transition-all duration-300 cursor-pointer opacity-30;
+}
+
+.inner-def {
+  @apply max-w-screen-lg w-full mx-auto;
+}
+
+.sec-container {
+  @apply w-full pl-4 pr-4;
+}
+
+.image-wrap {
+  @apply [&>span]:!static;
+}
+
+.image {
+  @apply !relative !w-full !h-[unset];
+}
+
+@tailwind utilities;
