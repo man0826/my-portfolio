@@ -19,7 +19,7 @@ const getImageURL = async (dirName: string, imageName: string) => {
 };
 
 export const getImagesData = async (worksData: Work[]) => {
-  let works: Array<Work> = [];
+  const works: Work[] = [];
 
   await Promise.all(
     worksData.map(async (work) => {

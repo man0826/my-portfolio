@@ -26,11 +26,6 @@ export const getStaticProps: GetStaticProps = async () => {
   const works = await getImagesData(worksData);
   const skills = await getData<Skill>("skills");
 
-  // const [skills, works] = await Promise.all([
-  //   getData<Skill>("skills"),
-  //   getImagesData(worksData),
-  // ]);
-
   return {
     props: { works, skills },
   };

@@ -6,7 +6,7 @@ const db = admin.firestore();
 export const getData = async <T extends Work | Skill>(
   collectionName: string
 ) => {
-  let arrayData: Array<T> = [];
+  const arrayData: T[] = [];
   const ref = await db.collection(collectionName).get();
 
   if (!ref) {
